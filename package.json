@@ -1,0 +1,36 @@
+{
+  "name": "react-stackex",
+  "version": "1.0.0",
+  "description": "React StackEx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veeracs/react-stackex.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "Webpack"
+  ],
+  "author": "Chandra Sekhar Veera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veeracs/react-stackex/issues"
+  },
+  "homepage": "https://github.com/veeracs/react-stackex#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.2.0"
+  }
+}
