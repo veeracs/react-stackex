@@ -2,12 +2,12 @@
   "name": "react-stackex",
   "version": "1.0.0",
   "description": "React StackEx",
-  "main": "client.js",
+  "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production DB_ENV=production npm run build && node lib/server.js",
+    "start": "NODE_ENV=production DB_ENV=production npm run build && node index.js",
     "build": "npm run clean && NODE_ENV=production webpack",
     "watch": "npm run clean && webpack --watch",
-    "server": "npm run build && forever stopall && NODE_ENV=production DB_ENV=production SSL_ENV=production forever start src/server.js",
+    "server": "npm run build && forever stopall && NODE_ENV=production DB_ENV=production SSL_ENV=production forever start index.js",
     "clean": "rm -rf public/build && rm -rf build"
   },
   "repository": {
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/veeracs/react-stackex#readme",
   "dependencies": {
+    "babel-register": "^6.24.1",
     "compression": "^1.7.0",
     "express": "^4.15.3",
     "normalize.css": "^7.0.0",
